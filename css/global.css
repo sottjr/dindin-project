@@ -3,7 +3,7 @@ body {
     font-family: 'Ubuntu';
     /* background-color: #E5E5E5; */
     margin: 0 auto;
-    /* max-width: 1440px; */
+    max-width: 1440px;
     min-width: 430px;
 }
 
@@ -182,4 +182,57 @@ nav {
     transition: 0.5s all;
     transform: scale(1.1);
     border: 2px solid #FF4081;
+}
+
+
+/* ******************************** */
+
+
+/* ***** SECTION COMENTARIOS ***** */
+
+
+/* ******************************** */
+
+.reference-comment {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+    padding: 5rem;
+}
+
+.reference-comment div div {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 5rem;
+    width: 70%;
+}
+
+.title-reference {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 50px;
+    color: #009688;
+    padding: 4%;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+
+/* ******************************** */
+
+
+/* ***** MORE CONTENT ***** */
+
+
+/* ******************************** */
+
+.more-content {
+    background-color: #E5E5E5;
+    margin: 0 auto;
 }
