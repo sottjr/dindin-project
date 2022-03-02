@@ -3,7 +3,12 @@ body {
     font-family: 'Ubuntu';
     /* background-color: #E5E5E5; */
     margin: 0 auto;
+}
+
+.banner,
+main {
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 
@@ -11,7 +16,7 @@ body {
 
 @media (max-width: 768px) {
     /* HEADER */
-    body header {
+    #wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -23,20 +28,40 @@ body {
         align-content: center;
     }
     header img {
-        width: 50%;
-        height: 50%;
+        width: 40%;
+        height: 40%;
     }
+    .menu {
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+    }
+    .menu a {
+        font-size: 3vh;
+        margin: 1vh;
+    }
+    /* BANNER */
     .img-banner {
         width: 100%;
         height: 50vh;
     }
-    /* REFERÊNCIA */
-    .reference div {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+    /* MAIS CONTEÚDO */
+    .more-content img {
+        width: 300px;
+        height: 181px;
     }
 }
+
+
+/* REFERÊNCIA */
+
+
+/* .reference div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    } */
 
 p {
     font-weight: 600;
@@ -52,22 +77,28 @@ header a {
 
 /* HEADER */
 
-.container-logo {
-    margin: 0 auto;
-    background-color: #2E948A;
+#wrapper {
+    max-width: 1440px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     align-content: center;
-    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25); */
+}
+
+.container-logo {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #2E948A;
 }
 
 
 /* ***** FOOTER **** */
 
 footer {
+    margin-top: 100px;
     background-color: #419488;
     display: flex;
     justify-content: space-around;
@@ -124,11 +155,6 @@ footer a {
 
 
 /* ***** FINAL FOOTER **** */
-
-#wrapper {
-    max-width: 1440px;
-    width: 100%;
-}
 
 nav {
     text-align: right;
@@ -302,34 +328,44 @@ nav {
 
 /* ******************************** */
 
-.reference-comment {
-    display: flex;
-    justify-content: space-around;
+#reference {
+    background-color: #FFFFFF;
+    padding: 5% 5%;
     align-items: center;
-    align-content: center;
-    text-align: left;
-    padding: 5rem;
 }
 
-.reference-comment div div {
-    display: flex;
-    gap: 2.5rem;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 5rem;
-    width: 70%;
-}
-
-.title-reference {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 37px;
-    line-height: 50px;
+#reference h1 {
     color: #009688;
-    padding: 4%;
-    margin-top: 5%;
-    margin-bottom: 0;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+#reference p {
+    font-size: 18px;
+    line-height: 20.9px;
+    text-align: left;
+}
+
+.image-depoimento {
+    width: 95px;
+    margin-right: 10px;
+}
+
+.depoimentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+.depoimento01 {
+    display: flex;
+    width: 500px;
+    text-align: left;
+    align-items: center;
+    margin: 20px 0;
 }
 
 
@@ -351,12 +387,11 @@ nav {
 }
 
 .more-content h1 {
-    font-size: 37px;
-    line-height: 50px;
     color: #009688;
-    /* padding: 4%;
-    margin-top: 5%; */
-    margin-bottom: 0;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 5%;
 }
 
 .botao-sub-content {
