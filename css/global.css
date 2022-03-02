@@ -4,33 +4,46 @@ body {
     /* background-color: #E5E5E5; */
     margin: 0 auto;
     max-width: 1440px;
-    min-width: 360px;
 }
 
 
 /* RESPONSIVIDADE */
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
+    /* HEADER */
     body header {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        align-content: center;
     }
     header img {
-        display: none;
+        width: 50%;
+        height: 50%;
     }
-    .reference img {
-        display: none;
+    .img-banner {
+        width: 100%;
+        height: 50vh;
     }
-    p {
-        font-weight: 600;
+    /* REFERÊNCIA */
+    .reference div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
     }
-    header a {
-        font-weight: 600;
-    }
-    /* #cel {
-        width: 500px; */
+}
+
+p {
+    font-weight: 600;
+}
+
+header a {
+    font-weight: 600;
 }
 
 
@@ -142,22 +155,6 @@ nav {
     font-size: 20px;
     text-decoration: none;
     margin: 10px 20px;
-}
-
-@media (max-width: 1000px) {
-    header {
-        height: 60px;
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
-    }
-    .menu nav a {
-        font-size: 15px;
-        margin: 10px;
-    }
-    .container-logo img {
-        width: 100px;
-    }
 }
 
 
