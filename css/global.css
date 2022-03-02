@@ -4,13 +4,43 @@ body {
     /* background-color: #E5E5E5; */
     margin: 0 auto;
     max-width: 1440px;
-    min-width: 430px;
+    min-width: 360px;
 }
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1000px) {
+    body header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header img {
+        display: none;
+    }
+    .reference img {
+        display: none;
+    }
+    p {
+        font-weight: 600;
+    }
+    header a {
+        font-weight: 600;
+    }
+    /* #cel {
+        width: 500px; */
+}
+
+
+/* FINAL RESPONSIVIDADE */
 
 
 /* HEADER */
 
 .container-logo {
+    margin: 0 auto;
     background-color: #2E948A;
     position: relative;
     display: flex;
@@ -19,6 +49,72 @@ body {
     justify-content: space-between;
     align-content: center;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ***** FOOTER **** */
+
+footer {
+    background-color: #419488;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    align-items: center;
+}
+
+.logo-footer1 {
+    padding: 0%;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+}
+
+.link-start {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    text-align: left;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: left;
+    display: inline;
+    margin: 0;
+}
+
+.logo-footer {
+    padding: 15%;
+    width: 100%;
+    height: 50%;
+}
+
+.buttons-footer li {
+    display: flex;
+    border: 2px solid #FFFFFF;
+    border-radius: 62px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 5%;
+}
+
+
+/* ***** FINAL FOOTER **** */
+
+#wrapper {
+    max-width: 1440px;
+    width: 100%;
 }
 
 nav {
@@ -46,6 +142,22 @@ nav {
     font-size: 20px;
     text-decoration: none;
     margin: 10px 20px;
+}
+
+@media (max-width: 1000px) {
+    header {
+        height: 60px;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu nav a {
+        font-size: 15px;
+        margin: 10px;
+    }
+    .container-logo img {
+        width: 100px;
+    }
 }
 
 
@@ -234,5 +346,73 @@ nav {
 
 .more-content {
     background-color: #E5E5E5;
+    padding: 5rem;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    border: 0;
+}
+
+.more-content h1 {
+    font-size: 37px;
+    line-height: 50px;
+    color: #009688;
+    /* padding: 4%;
+    margin-top: 5%; */
+    margin-bottom: 0;
+}
+
+.botao-sub-content {
+    text-align: center;
     margin: 0;
+    padding: 1rem;
+}
+
+.botao-sub-content button {
+    color: #FF4081;
+    background-color: transparent;
+    font-size: 20px;
+    border: 2px solid #FF4081;
+    border-radius: 62px;
+    box-sizing: border-box;
+    padding: 0.7% 5%;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.botao-sub-content button:hover {
+    transition: 0.5s all;
+    transform: scale(1.1);
+    background-color: #FF4081;
+    color: #FDFDFD;
+}
+
+.img-content {
+    height: 200px;
+    margin: 0 0 1rem 0 !important;
+}
+
+.sub-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem auto;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border: 0;
+}
+
+.sub-content div {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 1rem;
+}
+
+.sub-content span {
+    color: #009688;
+    font-weight: 700;
+    font-size: 25px;
 }
