@@ -41,6 +41,9 @@ main {
         margin: 1vh;
     }
     /* BANNER */
+    main {
+        text-align: center;
+    }
     .img-banner {
         width: 100%;
         height: 50vh;
