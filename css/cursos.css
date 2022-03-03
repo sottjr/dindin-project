@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
-html {
+* {
     box-sizing: border-box;
     margin: 0;
 }
@@ -13,6 +13,9 @@ body {
 #div-wrapper {
     max-width: 1440px;
     margin: 0 auto;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5%;
 }
 
 
@@ -175,6 +178,7 @@ container p {
 
 .divisao {
     display: flex;
+    margin-bottom: 10%;
 }
 
 
@@ -209,4 +213,50 @@ container p {
     width: 75%;
     height: 5px;
     background-color: #C4C4C4;
+}
+
+@media (max-width: 768px) {
+    /* HEADER */
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        align-content: center;
+    }
+    header img {
+        width: 50%;
+        height: 50%;
+    }
+    .menu {
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+    }
+    .menu a {
+        font-size: 3vh;
+        margin: 1vh;
+    }
+    /* footer */
+    footer img {
+        width: 50%;
+        height: 50%;
+    }
+    p {
+        font-weight: 600;
+    }
+    header a {
+        font-weight: 600;
+    }
+    /* **** BANNER **** */
+    .divisao img {
+        display: none;
+    }
+    .logo {
+        padding: 0;
+    }
 }
