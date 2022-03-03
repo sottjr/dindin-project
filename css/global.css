@@ -167,7 +167,7 @@ ul {
     text-decoration: none;
 }
 
-.button {
+div2 button {
     border-style: none;
     background-color: #2E948A;
     color: #FFFFFF;
@@ -183,7 +183,7 @@ ul {
     padding-bottom: 30px;
 }
 
-.button:hover {
+div2 button:hover {
     transition: .5s all;
     transform: scale(1.1);
     background-color: #FFFFFF;
