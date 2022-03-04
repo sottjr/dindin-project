@@ -2,20 +2,13 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Ubuntu';
     /* background-color: #E5E5E5; */
     margin: 0;
-}
-
-#div-wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 5%;
 }
 
 
@@ -64,6 +57,9 @@ nav {
     text-decoration: none;
     margin: 10px 20px;
 }
+
+
+/* ****** FOOTER ****** */
 
 
 /* FOTTER */
@@ -139,84 +135,134 @@ ul {
 }
 
 
-/* ***** primeira pagina **** */
+/* ****** ARTICLE ***** */
 
-
-/* ***textos*** */
-
-container h1 {
-    font-size: 60px;
-    color: #FF4081;
-    margin-bottom: 0;
+#wrapper2 {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-container p {
-    font-size: 20px;
-    margin: 0 auto 5% auto;
-    color: #555555;
-}
-
-.conteudo-text h1 {
-    font-size: 35px;
-    color: #FF4081;
-    margin-bottom: 5%;
-}
-
-.conteudo-text p {
-    font-weight: 300;
-    font-size: 18px;
-    padding-right: 9%;
-    margin-bottom: 8%;
-}
-
-.conteudo img {
-    margin: 0 8%;
-}
-
-.conteudo-text {
-    margin: 0 8%;
-}
-
-.divisao {
+article {
     display: flex;
-    margin-bottom: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9%;
+}
+
+main h1 {
+    color: #FF4081;
+    font-size: 3.12rem;
+    font-weight: 500;
+    margin-top: 7%;
+}
+
+article h2 {
+    width: 71%;
+    color: #2E948A;
+    margin: 5% 0% 1.5% 0%;
+}
+
+article p {
+    width: 71%;
+}
+
+.date {
+    font-size: 1.12rem;
+    font-weight: 300;
+    color: #9D9D9D;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .retangle {
+    width: 64.5rem;
+    height: 29rem;
+    background-color: #C4C4C4;
+    margin: 5% auto;
 }
 
 
-/* **** botao **** */
+/* ******** CONHEÇA NOSSOS CURSOS ******* */
 
-.button-list {
+.container-list {
+    background-color: #F7F7F7;
+}
+
+#wrapper3,
+#wrapper4 {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#wrapper4 h1 {
+    margin-top: 5%;
+    color: #FF4081;
+    font-size: 3.125rem;
+}
+
+.card-list {
+    margin: 5% auto;
+}
+
+.card-list img {
+    height: 270px;
+    margin: 15% 5%;
+}
+
+.card-list p {
+    color: #000000;
+    font-size: 17px;
+    margin: 0;
+    padding: 5% 0;
+    text-align: center;
+}
+
+.card-list h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #FF4081;
+}
+
+.button-comecar {
     border-radius: 62px;
     box-sizing: border-box;
     font-size: 20px;
     color: #FDFDFD;
-    padding: 1% 5%;
+    padding: 3% 10%;
     justify-content: center;
     text-align: center;
-    background-color: #419488;
+    background-color: #FF4081;
     cursor: pointer;
     border: 1px solid #FDFDFD;
 }
 
-.button-list:hover {
+.button-comecar:hover {
     background-color: #E5E5E5;
-    color: #419488;
+    color: #FF4081;
     transition: 0.5s all;
     transform: scale(1.1);
-    border: 2px solid #419488;
+    border: 2px solid #FF4081;
 }
 
-
-/* ***** linha **** */
-
-.linha {
-    margin: 8% auto;
-    width: 90%;
-    height: 5px;
-    background-color: #C4C4C4;
+@media (max-width: 1100px) {
+    main .retangle {
+        display: none;
+    }
+    .date {
+        margin-bottom: 5%;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     /* HEADER */
     #wrapper {
         display: flex;
@@ -254,10 +300,67 @@ container p {
         font-weight: 600;
     }
     /* **** BANNER **** */
-    .divisao img {
-        display: none;
-    }
     .logo {
         padding: 0;
+    }
+    .text-banner h1 {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        width: 98%;
+        padding: 0;
+        padding-left: 2%;
+        margin: 0 auto;
+    }
+    #wrapper1 div {
+        width: 98%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 0;
+    }
+    .banner img {
+        display: none;
+    }
+    #wrapper2 .conteudo {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    iframe {
+        margin: 0 auto;
+        text-align: center;
+        width: 290px;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .descricao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0% 5% 0% 5%;
+        margin-top: 5%;
     }
 }
