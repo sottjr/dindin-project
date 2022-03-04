@@ -2,20 +2,13 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Ubuntu';
     /* background-color: #E5E5E5; */
     margin: 0;
-}
-
-#div-wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 5%;
 }
 
 
@@ -64,6 +57,9 @@ nav {
     text-decoration: none;
     margin: 10px 20px;
 }
+
+
+/* ****** FOOTER ****** */
 
 
 /* FOTTER */
@@ -139,77 +135,101 @@ ul {
 }
 
 
-/* ***** primeira pagina **** */
+/* ***** BANNER ***** */
+
+section #wrapper1 {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1440px;
+    flex-wrap: wrap;
+}
+
+#wrapper1 div {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
-/* ***textos*** */
+/* ****textos do banner**** */
 
-container h1 {
-    font-size: 60px;
+.text-banner,
+.img-ilustra-banner {
+    padding: 4% 0% 4% 12%;
+    margin: 0 auto;
+}
+
+.img-ilustra-banner {
+    padding: 4% 0% 4% 0%;
+}
+
+.text-banner h1 {
+    font-size: 55px;
     color: #FF4081;
-    margin-bottom: 0%;
+    margin-bottom: 5%;
 }
 
-container p {
-    font-size: 20px;
-    margin: 0 auto 5% auto;
-    color: #555555;
-}
-
-.conteudo-text h1 {
-    font-size: 35px;
-    color: #FF4081;
-}
-
-.conteudo-text p {
+.text-banner p {
     font-weight: 300;
-    font-size: 18px;
-    padding-right: 9%;
+    font-size: 20px;
+    width: 75%;
+}
+
+
+/* ****** 2 secao***** */
+
+main {
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper2 {
+    max-width: 1440px;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0% 7% 12%;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 0% 29% 5% 5%;
+}
+
+#wrapper2 h1 {
+    font-size: 35px;
+    line-height: 40px;
+    color: #FF4081;
     margin-bottom: 8%;
 }
 
-.conteudo img {
-    margin: 0 8%;
-}
-
-.conteudo-text {
-    margin: 0 8%;
-}
-
-.divisao {
-    display: flex;
-    margin-bottom: 10%;
-}
-
-
-/* **** botao **** */
-
-.button-list {
-    border-radius: 62px;
-    box-sizing: border-box;
+#wrapper p {
+    font-weight: 300;
     font-size: 20px;
-    color: #FDFDFD;
-    padding: 1% 5%;
-    justify-content: center;
-    text-align: center;
-    background-color: #419488;
-    cursor: pointer;
-    border: 1px solid #FDFDFD;
-}
-
-.button-list:hover {
-    background-color: #E5E5E5;
-    color: #419488;
-    transition: 0.5s all;
-    transform: scale(1.1);
-    border: 2px solid #419488;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
 }
 
 
 /* ***** linha **** */
 
 .linha {
-    margin: 8% auto;
+    margin: 0% auto;
     width: 90%;
     height: 5px;
     background-color: #C4C4C4;
