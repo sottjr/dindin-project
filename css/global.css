@@ -9,21 +9,6 @@ body {
     margin: 0;
 }
 
-
-/* section,
-    main {
-        max-width: 1440px;
-        margin: 0 auto;
-    } */
-
-.more-content,
-.container-list {
-    background-color: #E5E5E5;
-}
-
-
-/* RESPONSIVIDADE */
-
 @media (max-width: 768px) {
     /* HEADER */
     #wrapper {
@@ -54,10 +39,17 @@ body {
     .banner {
         text-align: center;
     }
+    .banner h1 {
+        font-size: 40px;
+    }
+    .subtitle-banner p {
+        font-size: 20px;
+    }
     .img-banner {
-        margin: 20px auto;
+        display: none;
+        /* margin: 20px auto;
         width: 100%;
-        height: 50vh;
+        height: 50vh; */
     }
     /* MAIS CONTEÚDO */
     .more-content img {
@@ -79,6 +71,18 @@ body {
     header a {
         font-weight: 600;
     }
+}
+
+
+/* section,
+    main {
+        max-width: 1440px;
+        margin: 0 auto;
+    } */
+
+.more-content,
+.container-list {
+    background-color: #E5E5E5;
 }
 
 
@@ -488,3 +492,6 @@ div2 button:hover {
     font-weight: 700;
     font-size: 25px;
 }
+
+
+/* RESPONSIVIDADE */
